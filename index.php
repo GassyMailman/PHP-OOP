@@ -1,3 +1,5 @@
+<?php
+
 class Team {
 
 //class body
@@ -58,7 +60,6 @@ private $colors  = "Blue";
 
 ///////////////////////////////////////////////////////////////Lecture__2////////////////////////////////////////////////////////////////////////////////////////
 
-
 class Team {
 public $teamname;
 public $area;
@@ -112,3 +113,34 @@ public $publisher;
 		}
 
 }
+
+///////////////////////////////////////////////////////////////Lecture__3////////////////////////////////////////////////////////////////////////////////////////
+
+if (is_object(‘hello’))
+echo “It is an object”;
+else
+echo ‘It is not an object’;
+var_dump(is_object(‘XYZ’));
+var_dump(is_object(‘8008’));
+var_dump(is_object(123));
+var_dump(is_object(false));
+
+if (is_null(‘hello’))
+echo “It is null”;
+else
+echo ‘It is not null’;
+var_dump(is_null(‘XYZ’));
+var_dump(is_null(‘8008’));
+var_dump(is_null(123));
+var_dump(is_null(false));
+
+
+if (is_double(‘hello’))
+echo “It is a double”;
+else
+echo ‘It is not a double’;
+var_dump(is_double(‘XYZ’));
+var_dump(is_double(‘8008’));
+var_dump(is_double(123));
+var_dump(is_double(false));
+
