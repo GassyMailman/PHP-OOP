@@ -15,7 +15,7 @@ class Team {
 			$this->mascotName = $mascotName;
 		}
 		function getName() {
-			return "The " . $this->ducks . 
+			return "The " . $this->name . 
 			" are from " . $this->area .
 			" cool. ";
 		}
@@ -27,11 +27,11 @@ class Team {
 			$this->good = $good;
 		}
 		function Badorgood() {
-			return $this->Good;
+			return $this->good;
 		}
 	}    
 
-	class Kings extends Team, {
+	class Kings extends Team {
 		function __construct($color, $name, $area, $mascot, $mascotName, $bad) {
 			parent::__construct($color, $generalHeight, $generalHair, $athleticAbilities, $academicAbilities);
 			$this->bad = $bad;
@@ -43,7 +43,7 @@ class Team {
 
 	$Ducks = new Ducks("GoldOrangeBlack", "Ducks", "Anahiem", "ducks", "Wildwing", "Good");
 	print "The " . $Ducks->getName();
-	print "The team is " . $white->Badorgood();
+	print "The team is " . $Ducks->Badorgood();
 
 	class Plant {
 		public $flowers;
@@ -121,8 +121,8 @@ class Team {
 			return $this->brain;
 		}
 	}
-	$soccer = new Soccer("sport", "soccer", "very fun", "any amount of time", "at least two players", "muscles", "brain");
-	print "<br>" . "This game" . $soccer->getGame();
+	$soccer = new Soccer("sport", "soccer", "very fun", "any amount of time", "at least two players", "skill", "brain");
+	print "<br>" . "This game" . $soccer->getSport();
 	print ". It requires " . $soccer->needed();
 ?>
 
